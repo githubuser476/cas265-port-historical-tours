@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<!--
+Assignment Name: CAS206 Final Project Submission Portland Historical Tours Reserve Tour Page
+File Name: reservations.html
+Date: 12/7/16
+Programmer: Rebecca Kennedy
+-->
+
+<html lang="en">
+    
+<head>
+    
+    <meta charset="utf-8">
+    
+    <title>Reserve Tour</title>
+    
+    <link rel="stylesheet" href="css/portland_historical_tours.css">
+    
+    <!--[If 1t IE 9]>
+    <script scr="html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+    
+</head>
+    
+<body>
+    
+<div id="wrapper">
+    
+    <header>
+        <h1 id="signupmoved">
+            <a id="desktopLogo" href="index.html"></a>
+            Portland <a id="midMobileLogo" href="index.html"></a> Historical <a id="smallerMobileLogo" href="index.html"></a> Tours
+            <a id="tinyMobileLogo" href="index.html"></a>
+        </h1>
+    </header>
+        
+    <nav>
+        
+        <ul>
+            <li><a class="menubutton" href="index.html">Portland Tours</a></li>
+            <li><a class="menubutton" href="contact.html">Contact&nbsp;Us</a></li>
+            <li><a class="menubutton" href="about_us.html">About&nbsp;Us</a></li>
+            <li><a class="menubutton" href="tours.html">Tours</a></li>
+            <li><a class="menubutton" href="reservations.html">Reserve&nbsp;Tour</a></li>
+        </ul>
+    
+    </nav>
+    
+    <main>
+        
+        <header>
+            <h2>Reserve Tour</h2>
+        </header>
+        
+        <p>If you are interested in reserving a tour, please fill out the form below with all of the required information. Please make sure you know which one of <a href="tours.html">Our Tours</a> you are interested in before beginning the form. Thank you.</p>
+        
+        <h3>Book a Reservation Form</h3>
+        
+        <p>Fields with an asterisk * are required</p>
+        
+        <form method="get">
+            <select size="1" name="resChooseTour" id="resChooseTour" required="required" class="infoAttrib">
+                <option value="">*Choose your tour</option>
+                <option value="Downtown Tour">Downtown Tour</option>
+                <option value="Growth Tour">Growth Tour</option>
+                <option value="Landmarks Tour">Landmarks Tour</option>
+            </select><br><br>
+            
+            <div class="formFloat">
+                <label for="resFName">*First name:</label><br>
+                <input required="required" type="text" name="resFName" id="resFName" class="infoAttrib">
+            </div>
+            
+            <div class="formFloat">
+                <label for="resLName">*Last name:</label><br>
+                <input required="required" type="text" name="resLName" id="resLName" class="infoAttrib">
+            </div>
+                
+            <div class="formClear"></div>
+            
+            
+            <div class="formFloat">
+                <label for="resEmail">Email:</label><br>
+                <input type="email" name="resEmail" id="resEmail" class="infoAttrib">
+            </div>
+            
+            <div class="formFloat">
+                <label for="resPhone">*Phone number:</label><br>
+                <input type="tel" name="resPhone" id="resPhone" class="infoAttrib" required="required">
+            </div>
+            
+            <div class="formClear"></div>
+            
+            
+            <div class="formFloat">
+                <label for="resTourDate">*Tour date:</label><br>
+                <input type="date" name="resTourDate" id="resTourDate" class="infoAttrib" required="required">
+            </div><br>
+            
+            <div class="formFloat">
+                <select size="1" name="resTotalPpl" id="resTotalPpl" required="required"     class="infoAttrib">
+                    <option value="">*Total Participants</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+            
+            <div class="formClear"></div>
+            
+            <label for="resFoodDrinkSensitive">Does anyone in your party have food or drink sensitivities? If so, what are they?</label><br><br>
+            <textarea name="resFoodDrinkSensitive" id="resFoodDrinkSensitive" cols="50" rows="5"></textarea><br><br>
+            
+            <input id="resSignup" type="image" src="site-assets/button.jpg" alt="Sign Up Button">
+        </form>
+        
+        <div class="hero">
+            
+            <img src="site-assets/landmarks-tour-small.png" height="477" width="477" alt="Our Landmarks Tour" class="imgmaxwidth">
+            
+        </div>
+    
+    </main>
+    
+    <footer>
+        
+            <ul>
+                <li><a href="index.html">Portland Tours</a></li>
+                <li><a href="contact.html">Contact&nbsp;Us</a></li>
+                <li><a href="about_us.html">About&nbsp;Us</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="reservations.html">Reserve&nbsp;Tour</a></li>
+            </ul>
+        
+            <div class="footerInfo">
+                Portland Historical Tours<br>
+                1200 NW Naito Parkway<br>
+                Portland, OR 97209<br><br>
+            </div>
+        
+            <span class="footerInfo">Copyright &copy; 2016 Portland Historical Tours</span><br>
+            <span class="footerInfo"><a href="mailto:sales@portlandhistoricaltours.com">sales@portlandhistoricaltours.com</a></span>
+        
+    </footer>
+    
+</div>
+    
+</body>
+
+</html>
